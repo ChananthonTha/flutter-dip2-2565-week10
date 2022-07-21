@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextfieldDemo extends StatelessWidget{
-  const TextfieldDemo({Key? key}) : super(key:key);
+class TextFieldDemo extends StatelessWidget{
+  const TextFieldDemo({Key? key}) :super(key:key);
 
   @override
   Widget build(BuildContext context){
@@ -11,9 +11,9 @@ class TextfieldDemo extends StatelessWidget{
         backgroundColor: Colors.indigo,
       ),
       body: Container(
+        margin: EdgeInsets.all(20.0),
         child: TextField(
-          margin: EdgeInsets.all(20.0),
-          maxLength: 5,
+          maxLength: 10,
           decoration: InputDecoration(
             labelText: "Username",
             hintText: "Enter fullname please",
